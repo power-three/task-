@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Upluad cv</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="user_div" class="contact">
+    <section class="contact">
+          <h2 class="heading"><a id="contact">Upload your CV</a></h2>
+          <form>
+            <label for="fname">First Name</label>
+            <input id="fname" type="text" name="first-name" placeholder="First Name"></input>
+            <label for="lname">Last Name</label>
+            <input id="lname" type="text" name="last-name" placeholder="Last Name"></input>
+            <input  type="file"  ></input>
+            <input type="submit" value="Upload" onclick="writeUserData()"></input>
+          <!--  <button class="logout" onclick="logout()">Logout</button>-->
+          </form>
+        </section>
+    
+  </div>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+       var firebaseConfig = {
+    apiKey: "AIzaSyCTPD-pa5ck_A9v5XtEZNT6f5Hze08RKdA",
+    authDomain: "react-task-7a355.firebaseapp.com",
+    databaseURL: "https://react-task-7a355.firebaseio.com/",
+    projectId: "react-task-7a355",
+    storageBucket: "react-task-7a355.appspot.com",
+    messagingSenderId: "539885395166",
+    appId: "1:539885395166:web:143648a757650323"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="upload.js"></script>
+
+</body>
+</html>
